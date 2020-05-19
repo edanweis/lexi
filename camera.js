@@ -29,7 +29,7 @@ import {PoseIllustration} from './illustrationGen/illustration';
 import {Skeleton, facePartName2Index} from './illustrationGen/skeleton';
 import {FileUtils} from './utils/fileUtils';
 
-import * as girlSVG from './resources/illustration/girl.svg';
+import * as girlSVG from './resources/illustration/lexi.svg';
 import * as boySVG from './resources/illustration/boy.svg';
 import * as abstractSVG from './resources/illustration/abstract.svg';
 import * as blathersSVG from './resources/illustration/blathers.svg';
@@ -112,7 +112,7 @@ const defaultInputResolution = 200;
 const guiState = {
   avatarSVG: Object.keys(avatarSvgs)[0],
   debug: {
-    showDetectionDebug: true,
+    showDetectionDebug: false,
     showIllustrationDebug: false,
   },
 };
@@ -143,7 +143,7 @@ function setupGui(cameras) {
  */
 function setupFPS() {
   stats.showPanel(0);  // 0: fps, 1: ms, 2: mb, 3+: custom
-  document.getElementById('main').appendChild(stats.dom);
+  // document.getElementById('main').appendChild(stats.dom);
 }
 
 /**
